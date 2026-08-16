@@ -128,7 +128,8 @@ h2+p {
 
 .student-form input {
     padding: 10px;
-    width: 380px;
+   max-width: 100%;
+   width: 360px;
     border-radius: 5px;
     background-color: var(--bg);
     color: var(--text);
