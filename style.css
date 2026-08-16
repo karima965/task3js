@@ -76,10 +76,10 @@ h1+p {
 }
 @media (max-width:767px){
     h1{
-        font-size: 27px;
+        font-size: 24px;
     }
     h1+p{
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 h2 {
