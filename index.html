@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Information Card</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Hero -->
+        <div class="hero">
+
+            <img src="imges/graduation-cap-solid (2).png" alt="" class="cap">
+
+            <h1>Student Information Card</h1>
+
+
+            <p>✨Enter student details and get the status instantly ✨</p>
+        </div>
+
+        <!-- Student Details -->
+        <div class="student-card">
+
+            <div class="section-header">
+                <div class="sec-flex">
+                    <img src="imges/school-solid.png" alt="">
+                    <h2>Student Details</h2>
+                </div>
+                <p>Fill in the information below</p>
+            </div>
+
+
+            <form id="student-form" class="student-form">
+                <div class="form-container">
+                    <div class="input-group">
+                        <div class="sec-flex">
+                            <img src="imges/circle-user-solid.png" alt="">
+                            <label for="name">Name</label>
+                        </div>
+                        <input type="text" id="name" placeholder="Enter student name">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="sec-flex">
+                            <img src="imges/calendar-solid.png" alt="">
+                            <label for="age">Age</label>
+                        </div>
+                        <input type="text" id="age" placeholder="Enter age">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="sec-flex">
+                            <img src="imges/star-regular.png" alt="">
+                            <label for="grade">Grade (0 - 100)</label>
+                        </div>
+                        <input type="text" id="grade" placeholder="Enter grade">
+                    </div>
+                </div>
+                <div class="sec-flex box" id=" box">
+                    <img src="imges/eye-regular (1).png" alt="">
+                    <button class="show-btn sec-flex" type="button" id="btn"> Show Result</button>
+                </div>
+            </form>
+
+
+        </div>
+
+        <!-- Student Result -->
+        <div class="result-card">
+
+            <div class="section-header">
+
+                <div class="sec-flex">
+                    <img src="imges/trophy-solid.png" alt="">
+                    <h2>Student Result</h2>
+                </div>
+                <p>Your result will appear here</p>
+            </div>
+
+            <div class="result-info">
+                <div class="gradent">
+                    <img src="imges/graduation-cap-solid (2).png" alt="">
+                </div>
+                <div class="result-item">
+                    <span>Name</span>
+                    <p id="result-name">-----</p>
+                </div>
+
+                <div class="result-item">
+                    <span>Age</span>
+                    <p id="result-age">-----</p>
+                </div>
+
+                <div class="result-item">
+                    <span>Grade</span>
+                    <p id="result-grade">-----</p>
+                </div>
+
+                <div class="result-item result-st" id="result-st">
+                    <span>Status</span>
+                    <p id="result-status">-----</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Bonus -->
+        <div class="bonus-card">
+
+            <div class="section-header">
+
+                <div class="sec-flex">
+                    <img src="imges/gift-solid.png" alt="">
+                    <h2>Bonus</h2>
+                </div>
+                <p>Understanding Events in JavaScript</p>
+            </div>
+
+            <div class="event-comparison">
+
+                <div class="event-box">
+                    <h3>onclick</h3>
+                    <p>
+                        The onclick event is written directly inside the HTML element.<br>
+                        It is simple but mixes JavaScript with HTML
+                    </p>
+                </div>
+
+                <div class="vs">
+                    <p>VS</p>
+                </div>
+
+                <div class="event-box ">
+                    <h3 class="event-add">addEventListener()</h3>
+                    <p>
+                        The addEventListener() method attaches events in JavaScript.<br>
+
+                        It is more powerful, flexible, and keeps code clean and organized.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="why-preferred sec-flex">
+                <img src="imges/star-regular.png" alt="">
+                <p>
+                    <strong>Why preferred?</strong>
+                    addEventListener() allows multiple events on the same element and separates JavaScript from
+                    HTML.<br>
+
+                    which is best practice in modern web development.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
